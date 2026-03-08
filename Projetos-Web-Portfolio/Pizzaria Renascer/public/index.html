@@ -3,9 +3,14 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="keywords" content="Pizzaria, Renascer, rodízios, rodízio, Pizzas, Pizzarias no Parque Novo Mundo, Casa do rodízio"/>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/> <!-- Biblioteca de ícones Font Awesome -->
+  <link rel="stylesheet" href="style.css"/>
 
   <!-- SEO -->
-  <title>Pizzaria Renascer | A melhor pizza da cidade de Americana-SP</title>
+  <title>Pizzaria Renascer | Casa do Rodízio</title>
   <meta name="description" content="Pizzaria especialista em rodízio de Americana-SP. Pizzas tradicionais, especiais e acompanhamentos." />
 </head>
 
@@ -16,17 +21,18 @@
 
     <!-- Identidade da pizzaria -->
     <div class="brand">
-      <img src="logo.png" alt="Logo da Pizzaria Renascer"/>
-      <h1>Pizzaria Renascer</h1>
+      <img src="images/logo.png" alt="Logo da Pizzaria Renascer"/>
+      <h1>Pizzaria Renascer - A Casa do Rodízio</h1>
     </div>
+    <br>
 
     <!-- Navegação principal -->
     <nav aria-label="Navegação principal">
       <ul>
-        <li><a href="#home">Início</a></li>
-        <li><a href="#cardapio">Cardápio</a></li>
-        <li><a href="#sobre">Sobre nós</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="#" onclick="mostrarSecao('home')"><i class="fas fa-home"></i> Início</a></li>
+        <li><a href="#" onclick="mostrarSecao('cardapio')"><i class="fas fa-utensils"></i> Cardápio</a></li>
+        <li><a href="#" onclick="mostrarSecao('sobre')"><i class="fas fa-info-circle"></i> Sobre nós</a></li>
+        <li><a href="#" onclick="mostrarSecao('contato')"><i class="fas fa-phone-alt"></i> Contato</a></li>
         <!--li><a href="#avaliacoes">Avaliações</a></li-->
       </ul>
     </nav>
@@ -34,511 +40,219 @@
   </div>
 </header>
 
-<main id="home">
+<main>
 
-    <section class="hero" aria-labelledby="hero-title">
-  <h2 id="hero-title">A pizza perfeita para qualquer momento</h2>
-  <p>Ingredientes selecionados, massa artesanal e forno à lenha.</p>
-
-  <div class="hero-actions">
-    <a href="#cardapio">Ver Cardápio</a>
-    <a href="#contato">Pedir Agora</a>
-  </div>
+    <section id="home" class="hero active" aria-labelledby="hero-title">
+  <h2 id="hero-title">A pizza perfeita para qualquer momento!</h2>
+  <p>Ingredientes selecionados, massa artesanal e forno à lenha. Conheça a pizzaria especialista em rodízio e porções, o lugar perfeito para encontros, confraternizações e aniversários!</p>
+  <br>
+  <p>Com novidades, o rodízio da Pizzaria Renascer conta com bebida liberada todo dia, sendo água, Coca-Cola e Coca-Cola Zero, e Guaraná. Mais detalhes e preços na imagem abaixo:</p>
+  <br>
+  <img src="images/preços_renascer.png" alt="Preços da Pizzaria Renascer">
+  <br>
+  <p>Reserve sua mesa em nosso rodízio conosco, basta acessar o link disponível na seção <a class="botaoContato" href="#" onclick="mostrarSecao('contato')">Contato</a></p>
 </section>
+<br>
+<section id="cardapio" class="cardapio">
+  <h2>Nosso Cardápio 📋</h2>
 
-<section id="cardapio" aria-labelledby="cardapio-title">
-  <h2 id="cardapio-title">Nosso Cardápio</h2>
-
-
-<!--CARDÁPIO E LISTA DE TODAS AS PIZZAS TRADICIONAIS-->  
-  <article>
+  <!-- ================= TRADICIONAIS ================= -->
+  <div class="categoria">
     <h3>Pizzas Tradicionais</h3>
-    <ul>
-      <li>
-        <h4>Alho</h4>
-        <p>Mussarela, alho frito e tomate</p>
-        <span>R$ 53,00</span>
-      </li>
-
-      <li>
-        <h4>Atum com mussarela</h4>
-        <p>Atum, mussarela e cebola</p>
-        <span>R$ 62,00</span>
-      </li>
-
-      <li>
-        <h4>Bacon</h4>
-        <p>Mussarela, bacon, tomate e cebola</p>
-        <span>R$ 58,00</span>
-      </li>
-
-      <li>
-        <h4>Calabresa com mussarela</h4>
-        <p>Calabresa fatiada, mussarela e cebola</p>
-        <span>R$ 58,00</span>
-      </li>
-
-      <li>
-        <h4>Calabresa Acebolada</h4>
-        <p>Calabresa e cebola</p>
-        <span>R$ 53,00</span>
-      </li>
-
-      <li>
-        <h4>Creme de Milho</h4>
-        <p>Mussarela, creme de milho e batata palha</p>
-        <span>R$ 58,00</span>
-      </li>
-
-      <li>
-        <h4>Escarola</h4>
-        <p>Mussarela, chicória refogada e bacon</p>
-        <span>R$ 58,00</span>
-      </li>
-
-      <li>
-        <h4>Frango</h4>
-        <p>Mussarela, frango desfiado e requeijão</p>
-        <span>R$ 60,00</span>
-      </li>
-
-      <li>
-        <h4>Frango Caipira</h4>
-        <p>Mussarela, frango desfiado, cheddar e milho</p>
-        <span>R$ 60,00</span>
-      </li>
-
-      <li>
-        <h4>Italiana</h4>
-        <p>Mussarela, salame fatiado, requeijão e cebola</p>
-        <span>R$ 63,00</span>
-      </li>
-
-      <li>
-        <h4>Lombo Cremosa</h4>
-        <p>Mussarela, lombinho fatiado, requeijão e cebola</p>
-        <span>R$ 60,00</span>
-      </li>
-
-      <li>
-        <h4>Margherita</h4>
-        <p>Mussarela, tomate e manjericão</p>
-        <span>R$ 53,00</span>
-      </li>
-
-      <li>
-        <h4>Mussarela</h4>
-        <p>Mussarela e tomate</p>
-        <span>R$ 53,00</span>
-      </li>
-
-      <li>
-        <h4>Napolitana</h4>
-        <p>Mussarela, parmesão e tomate</p>
-        <span>R$ 58,00</span>
-      </li>
-
-      <li>
-        <h4>Palmito</h4>
-        <p>Mussarela, palmito e tomate</p>
-        <span>R$ 60,00</span>
-      </li>
-
-      <li>
-        <h4>Portuguesa</h4>
-        <p>Mussarela, presunto, ovos e cebola</p>
-        <span>R$ 60,00</span>
-      </li>
-
-      <li>
-        <h4>Tomate Seco</h4>
-        <p>Mussarela, tomate seco e requeijão</p>
-        <span>R$ 58,00</span>
-      </li>
-
-      <li>
-        <h4>3 Queijos</h4>
-        <p>Mussarela, cheddar e requeijão</p>
-        <span>R$ 60,00</span>
-      </li>
-
-      <li>
-        <h4>4 Queijos</h4>
-        <p>Mussarela, queijo prato, provolone e requeijão</p>
-        <span>R$ 62,00</span>
-      </li>
-    </ul>
-  </article>
-
-<!------------------------------------------------------------------------------------->
-<!--CARDÁPIO E LISTA DE TODAS AS PIZZAS ESPECIAIS-->  
-  <article>
-  <h3>Pizzas Especiais</h3>
-  <ul>
-    <li>
-      <h4>Americana</h4>
-      <p>Mussarela, presunto, palmito, ervilha, ovos e tomate</p>
-      <span>R$ 63,00</span>
-    </li>
-
-    <li>
-      <h4>Bacalhau</h4>
-      <p>Mussarela, bacalhau, pimentão e cebola no azeite</p>
-      <span>R$ 63,00</span>
-    </li>
-
-    <li>
-      <h4>Baiana Apimentada</h4>
-      <p>Mussarela, calabresa fatiada, presunto, ovos, cebola e pimenta dedo-de-moça</p>
-      <span>R$ 63,00</span>
-    </li>
-
-    <li>
-      <h4>Bambini</h4>
-      <p>Mussarela, frango desfiado, barbecue e bacon</p>
-      <span>R$ 63,00</span>
-    </li>
-
-    <li>
-      <h4>Brócolis Especial</h4>
-      <p>Mussarela, brócolis, bacon, requeijão e alho frito</p>
-      <span>R$ 62,00</span>
-    </li>
-
-    <li>
-      <h4>Caipira</h4>
-      <p>Mussarela, linguiça artesanal e cebola no azeite</p>
-      <span>R$ 60,00</span>
-    </li>
-
-    <li>
-      <h4>Calabresa Especial</h4>
-      <p>Calabresa, cream cheese, barbecue e cebola</p>
-      <span>R$ 62,00</span>
-    </li>
-
-    <li>
-      <h4>Espanhola</h4>
-      <p>Mussarela, atum, calabresa, bacon e cebola</p>
-      <span>R$ 65,00</span>
-    </li>
-
-    <li>
-      <h4>Especiale</h4>
-      <p>Mussarela, ovos, palmito, calabresa e cebola</p>
-      <span>R$ 63,00</span>
-    </li>
-
-    <li>
-      <h4>Especiale Bacon</h4>
-      <p>Mussarela, frango, bacon, requeijão e palmito</p>
-      <span>R$ 65,00</span>
-    </li>
-
-    <li>
-      <h4>Frango na Mostarda</h4>
-      <p>Frango em cubos grelhado na mostarda e requeijão cremoso</p>
-      <span>R$ 63,00</span>
-    </li>
-
-    <li>
-      <h4>Jabá</h4>
-      <p>Mussarela, carne seca e cebola</p>
-      <span>R$ 63,00</span>
-    </li>
-
-    <li>
-      <h4>Lombo aos 3 Queijos</h4>
-      <p>Lombinho, mussarela, requeijão e cheddar</p>
-      <span>R$ 63,00</span>
-    </li>
-
-    <li>
-      <h4>MC Cheddar</h4>
-      <p>Mussarela, bacon, cheddar e batata frita</p>
-      <span>R$ 60,00</span>
-    </li>
-
-    <li>
-      <h4>Meri</h4>
-      <p>Mussarela, ovos, bacon e requeijão</p>
-      <span>R$ 60,00</span>
-    </li>
-
-    <li>
-      <h4>Mexicana</h4>
-      <p>Mussarela, bacon, calabresa, pimentão, parmesão e alho frito</p>
-      <span>R$ 62,00</span>
-    </li>
-
-    <li>
-      <h4>Moda Pizzaiolo</h4>
-      <p>Mussarela, bacon, milho e requeijão</p>
-      <span>R$ 62,00</span>
-    </li>
-
-    <li>
-      <h4>Pão de Alho</h4>
-      <p>Mussarela, creme de alho e requeijão</p>
-      <span>R$ 60,00</span>
-    </li>
-
-    <li>
-      <h4>Renascer</h4>
-      <p>Mussarela, presunto, requeijão, milho, ovos e cebola</p>
-      <span>R$ 63,00</span>
-    </li>
-
-    <li>
-      <h4>Rúcula</h4>
-      <p>Mussarela, rúcula e tomate seco</p>
-      <span>R$ 62,00</span>
-    </li>
-
-    <li>
-      <h4>Siciliana</h4>
-      <p>Mussarela, champignon, bacon e requeijão</p>
-      <span>R$ 63,00</span>
-    </li>
-
-    <li>
-      <h4>Tropical</h4>
-      <p>Atum, palmito, bacon, mussarela e cebola</p>
-      <span>R$ 65,00</span>
-    </li>
-
-    <li>
-      <h4>Toscana</h4>
-      <p>Mussarela, calabresa, bacon e requeijão</p>
-      <span>R$ 62,00</span>
-    </li>
-  </ul>
-</article>
-
-<!------------------------------------------------------------------------------------->
-<!--CARDÁPIO E LISTA DE TODAS AS PIZZAS PREMIUM-->
-<article>
-  <h3>Pizzas Premium <span aria-hidden="true">⭐</span></h3>
-  <ul>
-    <li>
-      <h4>Alho Poró com Cream Cheese</h4>
-      <p>Mussarela, alho poró e cream cheese</p>
-      <span>R$ 62,00</span>
-    </li>
-
-    <li>
-      <h4>Atum Hot</h4>
-      <p>Atum, cream cheese, molho tare e cebolinha</p>
-      <span>R$ 68,00</span>
-    </li>
-
-    <li>
-      <h4>Bacalhau</h4>
-      <p>Bacalhau, mussarela, ovo, palmito, pimentão e azeitona fatiada</p>
-      <span>R$ 68,00</span>
-    </li>
-
-    <li>
-      <h4>Carne Seca à Baiana</h4>
-      <p>Carne seca, mussarela, ovos, palmito, pimenta dedo de moça e cebola</p>
-      <span>R$ 66,00</span>
-    </li>
-
-    <li>
-      <h4>Costela Barbecue</h4>
-      <p>Mussarela, costela bovina desfiada, molho barbecue, pimenta biquinho e cebola</p>
-      <span>R$ 66,00</span>
-    </li>
-
-    <li>
-      <h4>Cupim ao Alho <small>(Novidade)</small></h4>
-      <p>Mussarela, cupim desfiado, creme de alho, requeijão e cebola</p>
-      <span>R$ 69,00</span>
-    </li>
-
-    <li>
-      <h4>Mignon à Moda</h4>
-      <p>Mignon, mussarela, brócolis, requeijão e bacon</p>
-      <span>R$ 65,00</span>
-    </li>
-
-    <li>
-      <h4>Palmito Especial</h4>
-      <p>Mussarela, palmito, bacon e brócolis</p>
-      <span>R$ 65,00</span>
-    </li>
-
-    <li>
-      <h4>Peperoni</h4>
-      <p>Mussarela, peperoni fatiado e requeijão</p>
-      <span>R$ 65,00</span>
-    </li>
-
-    <li>
-      <h4>Peruana</h4>
-      <p>Peito de peru, requeijão e alho poró</p>
-      <span>R$ 65,00</span>
-    </li>
-
-    <li>
-      <h4>Rúcula com Brócolis</h4>
-      <p>Mussarela, rúcula, brócolis, tomate seco, requeijão, bacon e alho frito</p>
-      <span>R$ 65,00</span>
-    </li>
-
-    <li>
-      <h4>Suprema</h4>
-      <p>Mussarela, presunto, calabresa, milho, ovo e cebola</p>
-      <span>R$ 62,00</span>
-    </li>
-
-    <li>
-      <h4>5 Queijos</h4>
-      <p>Mussarela, queijo prato, provolone, requeijão e gorgonzola</p>
-      <span>R$ 65,00</span>
-    </li>
-  </ul>
-</article>
-
-
-<!------------------------------------------------------------------------------------->
-<!--CARDÁPIO E LISTA DE TODAS AS PIZZAS DOCES-->
-  <article>
-  <h3>Pizzas Doces</h3>
-  <ul>
-    <li>
-      <h4>Abacaxi com Coco</h4>
-      <p>Beijinho de coco, abacaxi e mussarela</p>
-      <span>R$ 53,00</span>
-    </li>
-
-    <li>
-      <h4>Abacaxi Nevado</h4>
-      <p>Creme de leite, chocolate branco e abacaxi</p>
-      <span>R$ 58,00</span>
-    </li>
-
-    <li>
-      <h4>Banana com Canela</h4>
-      <p>Banana, doce de leite e canela</p>
-      <span>R$ 53,00</span>
-    </li>
-
-    <li>
-      <h4>Banana Nevada</h4>
-      <p>Banana em rodelas, chocolate branco e canela</p>
-      <span>R$ 58,00</span>
-    </li>
-
-    <li>
-      <h4>Beijinho de Coco</h4>
-      <p>Beijinho de coco e mussarela</p>
-      <span>R$ 53,00</span>
-    </li>
-
-    <li>
-      <h4>Bueno</h4>
-      <p>Creme de Kinder Bueno e creme de avelã</p>
-      <span>R$ 58,00</span>
-    </li>
-
-    <li>
-      <h4>Charge</h4>
-      <p>Chocolate ao leite, amendoim e doce de leite</p>
-      <span>R$ 58,00</span>
-    </li>
-
-    <li>
-      <h4>Cheesecake de Morango</h4>
-      <p>Creme de queijo, chocolate branco e geleia de morango</p>
-      <span>R$ 58,00</span>
-    </li>
-
-    <li>
-      <h4>Confete</h4>
-      <p>Creme de chocolate e confete</p>
-      <span>R$ 53,00</span>
-    </li>
-
-    <li>
-      <h4>Chocolate</h4>
-      <p>Creme de chocolate e granulado</p>
-      <span>R$ 53,00</span>
-    </li>
-
-    <li>
-      <h4>Dois Amores</h4>
-      <p>Chocolate ao leite e chocolate branco</p>
-      <span>R$ 53,00</span>
-    </li>
-
-    <li>
-      <h4>Negresco</h4>
-      <p>Creme de leite ninho e topping Negresco</p>
-      <span>R$ 58,00</span>
-    </li>
-
-    <li>
-      <h4>Palha Italiana de Leite Ninho</h4>
-      <p>Chocolate ao leite, biscoito maisena, creme de ninho e leite ninho em pó</p>
-      <span>R$ 58,00</span>
-    </li>
-  </ul>
-</article>
+
+    <div class="item"><h4>Alho</h4><p>Mussarela, alho frito e tomate</p><span class="preco">R$ 53,00</span></div>
+    <div class="item"><h4>Atum com Mussarela</h4><p>Atum, mussarela e cebola</p><span class="preco">R$ 62,00</span></div>
+    <div class="item"><h4>Bacon</h4><p>Mussarela, bacon, tomate e cebola</p><span class="preco">R$ 58,00</span></div>
+    <div class="item"><h4>Calabresa Acebolada</h4><p>Calabresa e cebola</p><span class="preco">R$ 53,00</span></div>
+    <div class="item"><h4>Calabresa com Mussarela</h4><p>Calabresa fatiada, mussarela e cebola</p><span class="preco">R$ 58,00</span></div>
+    <div class="item"><h4>Creme de Milho</h4><p>Mussarela, creme de milho, e batata palha</p><span class="preco">R$ 58,00</span></div>
+    <div class="item"><h4>Escarola</h4><p>Mussarela, chicória refogada e bacon</p><span class="preco">R$ 58,00</span></div>
+    <div class="item"><h4>Frango</h4><p>Mussarela, frango desfiado e requeijão</p><span class="preco">R$ 60,00</span></div>
+    <div class="item"><h4>Frango Caipira</h4><p>Mussarela, frango desfiado, cheddar e milho</p><span class="preco">R$ 60,00</span></div>
+    <div class="item"><h4>Italiana</h4><p>Mussarela, salame fatiado, requeijão e cebola</p><span class="preco">R$ 63,00</span></div>
+    <div class="item"><h4>Lombo Cremosa</h4><p>Mussarela, lombinho fatiado, requeijão e cebola</p><span class="preco">R$ 60,00</span></div>
+    <div class="item"><h4>Margherita</h4><p>Mussarela, manjericão e tomate</p><span class="preco">R$ 53,00</span></div>
+    <div class="item"><h4>Mussarela</h4><p>Mussarela e tomate</p><span class="preco">R$ 53,00</span></div>
+    <div class="item"><h4>Napolitana</h4><p>Mussarela, tomate e parmesão</p><span class="preco">R$ 58,00</span></div>
+    <div class="item"><h4>Palmito</h4><p>Mussarela, palmito e tomate</p><span class="preco">R$ 60,00</span></div>
+    <div class="item"><h4>Portuguesa</h4><p>Mussarela, presunto, ovos e cebola</p><span class="preco">R$ 60,00</span></div>
+    <div class="item"><h4>Tomate Seco</h4><p>Mussarela, tomate seco e requeijão</p><span class="preco">R$ 58,00</span></div>
+    <div class="item"><h4>3 Queijos</h4><p>Mussarela, cheddar e requeijão</p><span class="preco">R$ 60,00</span></div>
+    <div class="item"><h4>4 Queijos</h4><p>Mussarela, queijo prato, provolone e requeijão</p><span class="preco">R$ 62,00</span></div>
+  </div>
+
+
+  <!-- ================= ESPECIAIS ================= -->
+  <div class="categoria">
+    <h3>Pizzas Especiais</h3>
+
+    <div class="item"><h4>Americana</h4><p>Mussarela, presunto, palmito, ervilha, ovos e tomate</p><span class="preco">R$ 63,00</span></div>
+    <div class="item"><h4>Bacalhau</h4><p>Mussarela, bacalhau, pimentão e cebola no azeite</p><span class="preco">R$ 63,00</span></div>
+    <div class="item"><h4>Baiana apimentada</h4><p>Mussarela, calabresa fatiada, presunto, ovos, cebola e pimenta dedo de moça</p><span class="preco">R$ 63,00</span></div>
+    <div class="item"><h4>Bambina</h4><p>Mussarela, frango desfiado, barbecue, bacon</p><span class="preco">R$ 63,00</span></div>
+    <div class="item"><h4>Brócolis Especial</h4><p>Mussarela, brócolis, bacon, requeijão e alho frito</p><span class="preco">R$ 62,00</span></div>
+    <div class="item"><h4>Caipira</h4><p>Mussarela, linguiça artesanal e cebola no azeite</p><span class="preco">R$ 60,00</span></div>
+    <div class="item"><h4>Calabresa Especial</h4><p>Calabresa, cream cheese, barbecue e cebola</p><span class="preco">R$ 62,00</span></div>
+    <div class="item"><h4>Espanhola</h4><p>Mussarela, atum, calabresa, bacon e cebola</p><span class="preco">R$ 65,00</span></div>
+    <div class="item"><h4>Especiale</h4><p>Mussarela, ovos, palmito, calabresa e cebola</p><span class="preco">R$ 65,00</span></div>
+    <div class="item"><h4>Especiale Bacon</h4><p>Mussarela, frango, bacon, requeijão e palmito</p><span class="preco">R$ 65,00</span></div>
+    <div class="item"><h4>Frango na mostarda</h4><p>Frango em cubos grelhado na mostarda e requeijão cremoso</p><span class="preco">R$ 63,00</span></div>
+    <div class="item"><h4>Jaba</h4><p>Mussarela, carne seca e cebola</p><span class="preco">R$ 63,00</span></div>
+    <div class="item"><h4>Lombo ao 3 queijos</h4><p>Lombinho, mussarela, requeijão e cheddar</p><span class="preco">R$ 63,00</span></div>
+    <div class="item"><h4>MC Cheedar</h4><p>Mussarela, bacon, cheddar e batata frita</p><span class="preco">R$ 60,00</span></div>
+    <div class="item"><h4>Meri</h4><p>Mussarela, ovos, bacon e requeijão</p><span class="preco">R$ 60,00</span></div>
+    <div class="item"><h4>Mexicana</h4><p>Mussarela, calabresa, bacon, pimentão, parmesão e alho frito</p><span class="preco">R$ 62,00</span></div>
+    <div class="item"><h4>Moda Pizzaiolo</h4><p>Mussarela, bacon, milho e requeijão</p><span class="preco">R$ 62,00</span></div>
+    <div class="item"><h4>Pão de alho</h4><p>Mussarela, creme de alho e requeijão</p><span class="preco">R$ 60,00</span></div>
+    <div class="item"><h4>Renascer</h4><p>Mussarela, presunto, ovos, cebola, milho e requeijão</p><span class="preco">R$ 63,00</span></div>
+    <div class="item"><h4>Rúcula</h4><p>Mussarela, rúcula e tomate seco</p><span class="preco">R$ 62,00</span></div>
+    <div class="item"><h4>Siciliana</h4><p>Mussarela, champignon, bacon e requeijão</p><span class="preco">R$ 63,00</span></div>
+    <div class="item"><h4>Tropical</h4><p>Atum, palmito, bacon, mussarela e cebola</p><span class="preco">R$ 65,00</span></div> 
+    <div class="item"><h4>Toscana</h4><p>Mussarela, calabresa, bacon e requeijão</p><span class="preco">R$ 62,00</span></div>   
+  </div>
+
+
+  <!-- ================= PREMIUM ================= -->
+  <div class="categoria">
+    <h3>Pizzas Premium ⭐</h3>
+
+    <div class="item"><h4>Alho Poró com Cream Cheese</h4><p>Mussarela, alho poró e cream cheese</p><span class="preco">R$ 62,00</span></div>
+    <div class="item"><h4>Atum Hot</h4><p>Atum, cream cheese, molho tare e cebolinha</p><span class="preco">R$ 68,00</span></div>
+    <div class="item"><h4>Bacalhoada</h4><p>Bacalhau, mussarela, ovo, palmito, pimentão e azeitona fatiada</p><span class="preco">R$ 68,00</span></div>
+    <div class="item"><h4>Carne seca a baiana</h4><p>Carne seca, mussarela, ovos, palmito, pimenta dedo de moça e cebola</p><span class="preco">R$ 68,00</span></div>
+    <div class="item"><h4>Costela Barbecue</h4><p>Mussarela, costela bovina desfiada e molho barbecue</p><span class="preco">R$ 66,00</span></div>
+    <div class="item"><h4>Cupim ao alho</h4><p>Mussarela, cupim desfiado, creme de alho, requeijão e cebola</p><span class="preco">R$ 66,00</span></div>
+    <div class="item"><h4>Mignon a moda</h4><p>Mignon, mussarela, brócolis, requeijão e bacon</p><span class="preco">R$ 69,00</span></div>
+    <div class="item"><h4>Palmito Especial</h4><p>Mussarela, palmito, bacon e brócolis</p><span class="preco">R$ 65,00</span></div>
+    <div class="item"><h4>Peperoni</h4><p>Mussarela, peperoni fatiado e requeijão</p><span class="preco">R$ 65,00</span></div>
+    <div class="item"><h4>Peruana</h4><p>Peito peru, requeijão e alho poró</p><span class="preco">R$ 65,00</span></div>
+    <div class="item"><h4>Rúcula com brócolis</h4><p>Mussarela, rúcula, brócolis, tomate seco, requeijão, bacon e alho frito</p><span class="preco">R$ 65,00</span></div>
+    <div class="item"><h4>Suprema</h4><p>Mussarela, presunto, calabresa, milho, ovo e cebola</p><span class="preco">R$ 62,00</span></div>
+    <div class="item"><h4>5 Queijos</h4><p>Mussarela, queijo prato, provolone, requeijão e gorgonzola</p><span class="preco">R$ 65,00</span></div>
+  </div>
+
+
+  <!-- ================= DOCES ================= -->
+  <div class="categoria">
+    <h3>Pizzas Doces 🍫</h3>
+
+    <div class="item"><h4>Abacaxi com Coco</h4><p>Beijinho de coco, abacaxi e mussarela</p><span class="preco">R$ 53,00</span></div>
+
+    <div class="item"><h4>Abacaxi Nevado</h4><p>Creme de leite, chocolate branco e abacaxi</p><span class="preco">R$ 58,00</span></div>
+
+    <div class="item"><h4>Banana com canela</h4><p>Banana, doce de leite e canela</p><span class="preco">R$ 53,00</span></div>
+
+    <div class="item"><h4>Banana Nevada</h4><p>Banana em rodelas, chocolate branco e canela</p><span class="preco">R$ 58,00</span></div>
+
+    <div class="item"><h4>Beijinho de coco</h4><p>Beijinho de coco e mussarela</p><span class="preco">R$ 53,00</span></div>
+
+    <div class="item"><h4>Bueno</h4><p>Creme de kinder bueno e creme de avelã</p><span class="preco">R$ 58,00</span></div>
+
+    <div class="item"><h4>Califórnia</h4><p>Pêssego, figo, abacaxi, doce de leite e mussarela</p><span class="preco">R$ 58,00</span></div>
+
+    <div class="item"><h4>Charge</h4><p>Chocolate ao leite, amendoim e doce de leite</p><span class="preco">R$ 58,00</span></div>
+
+    <div class="item"><h4>Cheesecake Morango</h4><p>Creme de queijo, chocolate branco e geléia de morango</p><span class="preco">R$ 58,00</span></div>
+
+    <div class="item"><h4>Confete</h4><p>Creme de chocolate e confete</p><span class="preco">R$ 53,00</span></div>
+
+    <div class="item"><h4>Chocolate</h4><p>Creme de chocolate e granulado</p><span class="preco">R$ 53,00</span></div>
+
+    <div class="item"><h4>Creme de avelã com ninho</h4><p>Creme de avelã e leite ninho em pó</p><span class="preco">R$ 58,00</span></div>
+
+    <div class="item"><h4>Danoninho</h4><p>Creme de morango e morangos picados</p><span class="preco">R$ 58,00</span></div>
+
+    <div class="item"><h4>Doce de leite com amendoim</h4><p>Doce de leite, amendoim e leite condensado</p><span class="preco">R$ 53,00</span></div>
+
+    <div class="item"><h4>Dois Amores</h4><p>Doce de leite, amendoim e leite condensado</p><span class="preco">R$ 53,00</span></div>
+
+    <div class="item"><h4>Merengue</h4><p>Creme de chocolate, suspiro, morango e leite condensado</p><span class="preco">R$ 58,00</span></div>
+
+    <div class="item"><h4>Nova Sensação</h4><p>Chocolate ao leite, chocolate branco, geléia de morango e fatias de morango</p><span class="preco">R$ 58,00</span></div>
+
+    <div class="item"><h4>Negresco</h4><p>Creme de leite ninho, topping negresco</p><span class="preco">R$ 58,00</span></div>
+    
+    <div class="item"><h4>Palha Italiana de Leite Ninho</h4><p>Chocolate ao leite, biscoito maisena, creme de ninho e leite ninho em pó</p><span class="preco">R$ 58,00</span></div>
+  </div>
+
+
+  <!-- ================= ACOMPANHAMENTOS ================= -->
+  <div class="categoria">
+    <h3>Acompanhamentos</h3>
+
+    <div class="item"><h4>Espaguete ao Brócolis</h4><span class="preco">R$ 32,00/kg</span></div>
+    <div class="item"><h4>Macarrão Baiano</h4><span class="preco">R$ 32,00/kg</span></div>
+    <div class="item"><h4>Nhoque</h4><span class="preco">R$ 32,00/kg</span></div>
+    <div class="item"><h4>Arroz Carreteiro</h4><span class="preco">R$ 32,00/kg</span></div>
+    <div class="item"><h4>Salpicão de frango</h4><span class="preco">R$ 32,00/kg</span></div>
+    <div class="item"><h4>Salada de maionese</h4><span class="preco">R$ 32,00/kg</span></div>
+    <div class="item"><h4>Batata em molho</h4><span class="preco">R$ 30,00/kg</span></div>
+    <div class="item"><h4>Panqueca</h4><span class="preco">R$ 32,00/kg</span></div>
+    <div class="item"><h4>Lasanha</h4><span class="preco">R$ 32,00/kg</span></div>
+  </div>
+
 </section>
 
-<section id="sobre" aria-labelledby="sobre-title">
+
+<section id="sobre" aria-labelledby="sobre-title"> <!--SEÇÃO SOBRE A PIZZARIA-->
   <h2 id="sobre-title">Sobre a Renascer</h2>
-
+<br>
   <p>A Pizzaria Renascer, fundada em 1993 em Americana pelo casal Roberto e Marinalva, iniciou suas atividades como lanchonete e sorveteria e, ao longo dos anos, tornou-se referência regional em rodízio de pizzas com acompanhamentos.</p>
-
-  <p>Com o crescimento da demanda, o espaço passou por três ampliações, chegando a 190 lugares, frequentemente com filas de espera, reflexo da qualidade e do bom atendimento. A casa preza pela simplicidade, não cobra taxa de serviço (10%), funciona de segunda a sábado e conta com nutricionista responsável, garantindo o cumprimento rigoroso das normas sanitárias.</p>
-
-  <p>Seu principal diferencial é a qualidade aliada ao atendimento, fortalecida pelo tradicional boca a boca, que mantém a casa cheia e conquista novos clientes a cada semana.</p>
-
-  <figure>
-    <img src="restaurante.jpg" alt="Restaurante da pizzaria">
-    <figcaption>Nossa pizzaria por dentro</figcaption>
+<br>
+  <p>Ao longo da história, nossa casa que era pequena, com apenas 40 lugares, passou por três ampliações para conseguir atender à demanda. Hoje contamos com 190 lugares, que em muitos dias enchem e formam fila de espera — sinal de um excelente trabalho.</p>
+<br>
+  <p>Uma casa simples que preza muito pela qualidade dos produtos servidos e pelo bom atendimento. Somos uma das pioneiras em não cobrar a taxa de mesa ou garçom (10%) em serviços de rodízio e também em abrir de segunda a sábado, fechando aos domingos para o descanso merecido dos colaboradores.</p>
+<br>
+  <p>A Pizzaria Renascer conta com um nutricionista responsável diariamente. Dessa forma, são verificados e obedecidos todos os critérios da legislação sanitária vigente, acompanhando integralmente a manipulação, armazenamento e distribuição de seus produtos, mantendo assim toda a qualidade higiênico-sanitária.</p>
+<br>
+  <p>Este é nosso diferencial e marketing: quem prova de nossos sabores volta sempre. É o tradicional boca a boca, que resulta em casa cheia e disputa por mesas todos os finais de semana. Venha conhecer e saborear o melhor rodízio de pizzas de Americana e região e torne-se também mais um fã da Pizzaria Renascer.</p>
+  <br>
+  <figure> <!--representa um conteúdo autocontido, como imagens, diagramas, fotos ou blocos de código, que pode ser movido para fora do fluxo principal (como para um apêndice) sem alterar o sentido do documento-->
+    <img src="images/restaurante.jpg" alt="Restaurante da pizzaria">
   </figure>
 </section>
 
-<section id="contato" aria-labelledby="contato-title">
+<section id="contato" aria-labelledby="contato-title"> <!--SEÇÃO DE CONTATO COM INFORMAÇÕES DE LOCALIZAÇÃO, TELEFONE E FORMULÁRIO DE CONTATO-->
   <h2 id="contato-title">Faça seu pedido</h2>
 
-  <address>
+  <address> <!--elemento semântico que representa as informações de contato de uma pessoa, empresa ou organização-->
     <p>📍 Av. Campos do Jordão, 482 - Parque Novo Mundo, Americana - SP</p>
-    <p>📞 <a href="tel:+551934067011">(19) 3406-7011</a></p>
+    <p>📞 <a href="tel:+551934067011">(19) 3406-7011</a> | <a href="tel:+551934061011">(19) 3406-1011</a></p>
+    <br>
+    <p>Email: <a href="mailto:contato@pizzariarenascer.com.br">contato@pizzariarenascer.com.br</a></p>
   </address>
-
+<br>
   <form>
-    <fieldset>
-      <legend>Entre em contato</legend>
+    <fieldset> <!--para agrupar logicamente elementos relacionados dentro de um formulário, como campos de endereço ou dados pessoais-->
+      <legend>Entre em contato</legend> <!--utilizada para definir um título ou legenda para um grupo de campos relacionados-->
 
       <label for="nome">Nome</label>
       <input type="text" id="nome" name="nome">
 
-      <label for="mensagem">Mensagem</label>
+      <label for="mensagem">Digite seu pedido</label>
       <textarea id="mensagem" name="mensagem"></textarea>
 
       <button type="submit">Enviar</button>
     </fieldset>
   </form>
+<br>
+<br>
+  <h2>Reserve sua mesa:</h2>
+  <p class="reservar-mesa"> <a href="https://renascerpizzaria.vercel.app/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnL2Gr50tW8_QxXowgGQm3NCqwyVajLsy68uSRM544MXImbTtUGAz9G2l--Eo_aem_X22ibth5rr7PZEjxIpTuIA">Reserve sua mesa de forma rápida e fácil</a></p>
 </section>
 
+<!--RODAPÉ DO SITE COM UMA BARRA DE NAVEGAÇÃO, DIREITOS AUTORAIS E INFORMAÇÕES SOBRE ATENDIMENTO-->
 <footer>
-  <nav aria-label="Links do rodapé">
-    <ul>
-      <li><a href="#home">Início</a></li>
-      <li><a href="#cardapio">Cardápio</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-  </nav>
-
+  <h3>ATENDIMENTO</h3>
+  <p>Segunda a Sábado - 19h ás 23h</p>
+<br>
   <p>&copy; 2026 Pizzaria Renascer. Todos os direitos reservados.</p>
+  <p>Produzido por Gabriel Andrade.</p>
 </footer>
+
+<script src="script.js"></script> <!-- Link para integração do arquivo JavaScript externo -->
 
 </main>
 
 </body>
 </html>
-
