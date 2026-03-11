@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="keywords" content="Portfólio, Gabriel, Americana-SP, Python, Ornella, FATEC"/>
+  <meta name="author" content="Gabriel Andrade"/>
+  <link rel="stylesheet" href="style.css"/>
+  <title>Gabriel De Pieri De Andrade - Backend Developer</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .voltar {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background: var(--clr-primary, #0077ff);
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    .voltar:hover {
+      background-color: #005fcc;
+    }
+  </style>
+</head>
+<body>
+  <button id="toggle-theme" onclick="alternarTema()">Alternar Tema</button>
+
+  <main>
+    <header id="cabecalho">
+      <h1>Eu sou Gabriel Andrade!</h1>
+      <img src="images/gabrielkroos.jpg" alt="Imagem de Gabriel Andrade"/>
+    </header>
+
+    <section id="links" class="secao">
+      <div class="abas">
+        <button class="aba" onclick="mostrarPagina('portfolio')">Sobre Mim</button>
+        <button class="aba" onclick="mostrarPagina('americana')">Minha Cidade</button>
+        <button class="aba" onclick="mostrarPagina('fatec')">Minha Faculdade</button>
+        <button class="aba" onclick="mostrarPagina('ornella')">Ensino Médio</button>
+      </div>
+    </section>
+
+    <div id="portfolio">
+      <section id="apresentacao" class="secao">
+        <h2>Apresentação</h2>
+        <p>Meu nome é Gabriel Andrade, mais conhecido como Kroos ou Gabs por alguns, tenho 18 anos e sou um jovem que tem o sonho de ser um grande programador Back-End. Aqui apresentarei resumidamente sobre minha pessoa, meus objetivos, sonhos e entre outras coisas.</p>
+      </section>
+
+      <section id="sobre-mim" class="secao">
+        <h2>Sobre Mim</h2>
+        <p>Nasci em Americana–SP e moro com meus pais e meu irmão de 13 anos em um dos bairros mais tradicionais da cidade. Somos uma família muito unida, sustentada pela graça de Deus, e sempre enfrentamos juntos qualquer situação, oferecendo apoio mútuo em todas as etapas da vida.</p>
+        <p>Tenho grande interesse em atuar como desenvolvedor Back-End, área na qual posso trabalhar na lógica, na estrutura e no funcionamento interno de sistemas. Gosto de desafios e encontro na programação um campo perfeito para exercitar raciocínio, criatividade e solução de problemas. Minha paixão por tecnologia começou ainda na infância, influenciada pelos jogos eletrônicos. Meu primeiro contato marcante foi com meu console PS2, seguido por diversos jogos simples de computador, encontrados em sites como Friv e Poki. Foi nesse universo que meu interesse por tecnologia começou a despertar.</p>
+        <p>Antes de escolher a programação, meu sonho era ser jogador de futebol — algo comum para muitos jovens. Depois, cogitei seguir carreira em arquitetura, atraído pela ideia de planejar e projetar grandes construções. No entanto, por não me identificar com a rotina de cálculos extensos, acabei ficando temporariamente indeciso sobre qual caminho seguir. Tudo mudou após uma conversa com meu primo, que é desenvolvedor Back-End. Esse diálogo abriu minha visão sobre a área da tecnologia e me mostrou um caminho profissional que unia lógica, criatividade e inovação. Desde então, firmei o propósito de me tornar programador e venho construindo esse sonho diariamente.</p>
+        <p>Conclui o Ensino Médio em 2025, e hoje ingressei na FATEC, cursando Análise e Desenvolvimento de Sistemas, e especializando-me na área e buscando me tornar um profissional preparado para enfrentar grandes desafios e conquistar espaço no mercado de tecnologia.</p>
+      </section>
+
+      <section id="formacao" class="secao">
+        <h2>Formação Acadêmica</h2>
+        <ul>
+          <li>Curso Técnico de Desenvolvimento de Sistemas integrado ao Ensino Médio na E.E Ornella Rita Ferrari Sacilotto;</li>
+          <br>
+          <li>Jovem Acolhedor 2024/25 - Ornella</li>
+          <br>
+          <li>English Course IDO 2.0 - Microcamp</li>
+          <br>
+          <li>1º Lugar no MOBFOG 2023 - Ornella</li>
+          <br>
+          <li>Soluções Integradas com IoT - Senai Americana</li>
+        </ul>
+      </section>
+
+      <section id="hab-tecnicas" class="secao">
+        <h2>Habilidades Técnicas</h2>
+        <ul>
+          <li>Desenvolvimento Web (HTML5, CSS3, JS)</li>
+          <br>
+          <li>Python</li>
+          <br>
+          <li>Lógica de Programação</li>
+          <br>
+          <li>IDE Arduino</li>
+        </ul>
+      </section>
+
+      <section id="hab-socioemocionais" class="secao">
+        <h2>Habilidades Socioemocionais</h2>
+        <ul>
+          <li>Comunicação eficaz</li>
+          <br>
+          <li>Trabalho em equipe</li>
+          <br>
+          <li>Resolução de conflitos</li>
+          <br>
+          <li>Resiliência</li>
+        </ul>
+      </section>
+
+      <section id="projetos" class="secao">
+        <h2>Projetos em Destaque</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Projeto Portfólio</h3>
+            <p>Site do meu Portfólio feito em aula de Front-End utilizando HTML e CSS.</p>
+          </div>
+
+          <div class="card">
+            <h3>Lista de Tarefas</h3>
+            <p>Site de uma lista de tarefas feito em aula, onde o usuário consegue inserir a tarefa, marcar como concluída e exclui-lá. Feito com HTML, CSS, JS e alguns componentes React.</p>
+          </div>
+
+          <div class="card">
+            <h3>AnimoVERSE - Desenvolvimento De Um Portal De Animes Com Arquitetura Full Stack E Integração De Api Externa</h3>
+            <p>O AnimoVERSE é um portal web Full Stack sobre animes, com Backend em Node.js/Express, SQLite, autenticação segura e arquitetura modular. No Frontend (HTML, CSS e JS), integra a Jikan API para exibir informações completas de animes, com busca dinâmica, páginas de detalhes, tema dark e layout responsivo. Inclui login, favoritos, tratamento de erros e carregamento assíncrono, oferecendo uma experiência moderna e intuitiva.</p>
+            </div>  
+
+          </div>
+      </section>
+    </div>
+
+    <section id="americana" class="secao hidden">
+      <h2>Sobre Americana</h2>
+      <p>Americana é uma cidade do interior do estado de São Paulo, localizada a cerca de 130 km da capital, integrando a região metropolitana de Campinas. Fundada oficialmente em 1875, sua origem está ligada à construção da ferrovia e à chegada de imigrantes norte-americanos após a Guerra Civil dos Estados Unidos. Esses imigrantes, conhecidos como confederados, trouxeram costumes, tradições e técnicas agrícolas que influenciaram fortemente a cultura local, especialmente no cultivo do algodão.</p>
+
+<p>Com o passar do tempo, Americana se desenvolveu e se tornou um importante polo industrial, principalmente no setor têxtil, sendo conhecida por décadas como uma das capitais brasileiras do tecido. Hoje, sua economia é diversificada, com indústrias, comércio, serviços e um setor educacional crescente, com faculdades como a FATEC e o UNISAL.</p>
+
+<p>A cidade é bem estruturada, com boa rede de saúde, escolas, transporte urbano e acesso fácil às principais rodovias do estado. O clima é tropical de altitude, com verões quentes e chuvosos e invernos mais secos e amenos. Na área cultural, se destacam o Parque Ecológico, o Teatro Municipal, o Museu de Arte Contemporânea e festas tradicionais como a Festa de Santo Antônio e o famoso Rodeio de Americana, um dos maiores do Brasil.</p>
+
+<p>Americana preserva um ambiente típico de cidade de interior, mas com forte dinamismo urbano. Sua população, estimada em cerca de 247 mil habitantes, desfruta de uma cidade com infraestrutura desenvolvida, influência histórica marcante e qualidade de vida elevada.</p>
+<img src = "images/americanaNoite.jpg" alt = "Entrada de Americana"/> 
+      <a class="voltar" onclick="mostrarPagina('portfolio')">← Voltar ao Portfólio</a>
+    </section>
+
+    <section id="fatec" class="secao hidden">
+      <h2>Sobre a FATEC</h2>
+      <p>A FATEC oferece cursos superiores gratuitos de qualidade voltados ao mercado de trabalho, sendo os mais populares na área de tecnologia (Análise e Desenvolvimento de Sistemas, Segurança da Informação e Jogos Digitais), além disso oferecem entre outros cursos, como o de Gestão Empresarial. A FATEC também tem parcerias com grandes empresas renomadas no mercado, como a Microsoft, na qual dão oportunidades para intercâmbios para países como Canadá e Espanha.</p>
+      <p>Com mais de 10 laboratórios de informática e com computadores desktops, a FATEC tem uma estrutura de grande porte e compatível com seus devidos cursos oferecidos. Além de um setor exclusivo pra área têxtil e Design de Modas. </p>
+      <p>Para ingressar na faculdade FATEC, deve ser feito o vestibular que ocorre sempre no começo do 1º Semestre e do 2º Semestre, com a inscrição podendo ser feita no site oficial da FATEC:</p>
+      <a href="https://vestibular.fatec.sp.gov.br/home/">Site Oficial da FATEC</a>
+      <br>
+      <img src = "images/fatecIMG.png" alt = "FATEC">
+      <a class="voltar" onclick="mostrarPagina('portfolio')">← Voltar ao Portfólio</a>
+    </section>
+
+    <section id="ornella" class="secao hidden">
+      <h2>Sobre a Escola Ornella</h2>
+      <p>A Escola Estadual Professora Ornella Rita Ferrari Sacillotto, situada na Rua Guarujá, 1609, no bairro Parque Universitário em Americana (SP), é uma instituição pública de Ensino Médio que funciona em período integral. Inaugurada em meados de 2016 com um investimento estadual de cerca de R$5,3 milhões, a escola foi fruto de articulação política local, contando com apoio de vereadores e deputados, e atendeu inicialmente 164 alunos, embora tivesse capacidade para cerca de 300.</p>
+      <p>A infraestrutura da escola é moderna e acessível, com 10 a 13 salas de aula, laboratório de ciências e de informática, biblioteca ou sala de leitura, refeitório, cozinha, pátio coberto, quadra poliesportiva e banheiros adaptados para pessoas com deficiência. Além disso, a instituição oferece acesso à internet banda larga e dispõe de equipamentos como computadores portáteis para uso dos alunos.</p>
+      <p>Com uma comunidade escolar de tamanho médio (entre 200 e 500 matrículas), sua proposta de educação em tempo integral envolve jornadas de até nove horas e inclui atividades técnicas e esportivas, o que a posiciona como uma referência local no ensino médio público.</p>
+      <img src = "images/ornella.jpg" alt = "Escola Ornella">
+      <a class="voltar" onclick="mostrarPagina('portfolio')">← Voltar ao Portfólio</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Fale Comigo:</p>
+    <ul>
+      <li><a href="https://wa.me/5519994068895?text=Ol%C3%A1%20Gabriel!%20%F0%9F%98%8A%0AEncontrei%20seu%20portf%C3%B3lio%20e%20fiquei%20bem%20interessado%20no%20seu%20trabalho.%0AGostaria%20de%20tirar%20algumas%20d%C3%BAvidas%20sobre%20programa%C3%A7%C3%A3o%2C%20voc%C3%AA%20pode%20me%20ajudar%3F">Whatsapp</a></li>
+      <li><a href="https://www.instagram.com/bieelzs.dev/">Instagram</a></li>
+    </ul>
+    <p>&copy; Meu Portfólio - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

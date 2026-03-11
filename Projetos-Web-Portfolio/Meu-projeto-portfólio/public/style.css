@@ -1,0 +1,251 @@
+/* Variáveis de cores para facilitar o tema claro/escuro */
+:root {
+  --clr-bg-light: #f9f9f9;
+  --clr-bg-dark: #121212;
+  --clr-text-light: #333;
+  --clr-text-dark: #eee;
+  --clr-primary: #0077ff;
+  --clr-primary-hover: #005fcc;
+  --clr-card-bg: #fff;
+  --clr-card-bg-dark: #1f1f1f;
+  --clr-shadow: rgba(0,0,0,0.1);
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--clr-bg-light);
+  color: var(--clr-text-light);
+  font-family: var(--font-family);
+  line-height: 1.6;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  min-height: 100vh;
+  padding: 0 1rem;
+}
+
+.dark-mode {
+  background-color: var(--clr-bg-dark);
+  color: var(--clr-text-dark);
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  border-bottom: 2px solid var(--clr-primary);
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+#cabecalho {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#cabecalho img {
+  max-width: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px var(--clr-shadow);
+  transition: transform 0.3s ease;
+}
+
+#cabecalho img:hover {
+  transform: scale(1.05);
+}
+
+.abas {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.aba {
+  background-color: var(--clr-primary);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  color: white;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px var(--clr-shadow);
+  user-select: none;
+}
+
+.aba:hover, .aba:focus {
+  background-color: var(--clr-primary-hover);
+  box-shadow: 0 6px 10px rgba(0, 95, 204, 0.7);
+  outline: none;
+}
+
+.secao {
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  padding: 1rem 1.5rem;
+  background-color: var(--clr-card-bg);
+  border-radius: 14px;
+  box-shadow: 0 3px 8px var(--clr-shadow);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.hidden {
+  display: none !important;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#americana img{
+  border-radius: 30px;
+  box-shadow: 0 4px 8px var(--clr-shadow);
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  height: 300px;
+}
+
+#fatec img{
+  border-radius: 30px;
+  box-shadow: 0 4px 8px var(--clr-shadow);
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  height: 300px;
+}
+
+#ornella img{
+  border-radius: 30px;
+  box-shadow: 0 4px 8px var(--clr-shadow);
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  height: 300px;
+}
+
+/* Cards Projetos */
+.cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--clr-card-bg);
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px var(--clr-shadow);
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 119, 255, 0.4);
+}
+
+/* Botão Voltar */
+.voltar {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--clr-primary);
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.voltar:hover {
+  background-color: var(--clr-primary-hover);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid #ccc;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: var(--clr-text-light);
+}
+
+.dark-mode footer {
+  border-color: #444;
+  color: var(--clr-text-dark);
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+footer ul li a {
+  color: var(--clr-primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: var(--clr-primary-hover);
+}
+
+/* Botão alternar tema */
+#toggle-theme {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--clr-primary);
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px var(--clr-shadow);
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+  user-select: none;
+}
+
+#toggle-theme:hover {
+  background-color: var(--clr-primary-hover);
+}
+
+/* Modo escuro ajustes nos cards e seções */
+.dark-mode .secao,
+.dark-mode .card {
+  background-color: var(--clr-card-bg-dark);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.7);
+}
