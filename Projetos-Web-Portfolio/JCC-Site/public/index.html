@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" /> <!-- Define a codificação de caracteres para evitar erros com acentos -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Garante que o site seja responsivo em celulares -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/> <!-- Biblioteca de ícones Font Awesome -->
+  <meta name="description" content="Site oficial do JCC - Jovens Caminhando com Cristo, grupo de jovens da Paróquia São Francisco de Assis em Americana-SP." />
+  <meta name="keywords" content="JCC, Grupo de Jovens, Paróquia São Francisco de Assis, Jovens com Cristo" />
+  <title>Jovens Caminhando com Cristo</title>
+  <link rel="stylesheet" href="style.css"/>    
+</head>
+
+<body onload="carregouPagina()">
+  <header>
+    <nav class="navbar">
+      <div class="logo e título">
+        <img src="images/jcclogo.png" alt="Logo do Grupo JCC"/>
+        <h1>Jovens Caminhando com Cristo - JCC</h1>
+      </div>
+<ul class="nav-links">
+  <!-- Cada link chama uma função JS para mostrar a seção correspondente -->
+      <li><a href="#" onclick="mostrarSecao('historia')"><i class="fas fa-book-open"></i> História</a></li>
+      <li><a href="#" onclick="mostrarSecao('paroquia')"><i class="fas fa-church"></i> Paróquia</a></li>
+      <li><a href="#" onclick="mostrarSecao('coordenadores')"><i class="fas fa-users"></i> Coordenadores</a></li>
+      <li><a href="#" onclick="mostrarSecao('encontros')"><i class="fas fa-calendar-alt"></i> Encontros</a></li>
+      <li><a href="#" onclick="mostrarSecao('campanha-natal')"><i class="fas fa-gift"></i> Campanha de Natal</a></li>
+</ul>
+
+    </nav>
+  </header>
+
+  <main>
+    <section id="historia" class="active">
+      <h2>História do Grupo</h2>
+      <p>O JCC – Jovens Caminhando com Cristo foi fundado em 1991, na cidade de Americana-SP, com o objetivo de aproximar os jovens de Cristo por meio da espiritualidade, da amizade e do serviço. Surgiu como uma iniciativa da paróquia para envolver a juventude de forma ativa na vida da Igreja, promovendo encontros, retiros e ações sociais. Desde então, o grupo se tornou um espaço de evangelização e acolhimento, reunindo jovens que desejam caminhar juntos na fé e no amor a Deus.</p>
+      <br>
+      <p>Com encontros marcados pela espiritualidade, amizade e formação, o JCC começou com poucos membros, mas logo cresceu graças ao entusiasmo daqueles que experimentaram o amor de Deus por meio do grupo. Desde o início, o JCC buscou unir momentos de oração, música, partilha, estudo da Palavra e ações sociais, criando um ambiente acolhedor e missionário.</p>
+      <br>
+      <img class = "antigo" src="images/antigoJCC.jpg" alt="Foto do grupo JCC - 30 anos"/>
+      <br>
+      <img class = "antigo2" src="images/JCC-pj.jpg" alt="Foto Antiga do JCC/PJ"/>
+    </section>
+
+    <section id="paroquia">
+      <h2>Conheça nossa Paróquia</h2>
+      <p>A Paróquia São Francisco de Assis, situada no bairro Parque Novo Mundo, em Americana-SP, foi oficialmente criada em 2 de fevereiro de 2014 pela Diocese de Limeira, após um período como “quase-paróquia” iniciado por meio de um trabalho missionário com apoio dos padres redentoristas. Essa missão teve como objetivo fortalecer e organizar a comunidade local, que já demonstrava grande participação e desejo de crescimento na fé.</p>
+      <br>
+      <p>Desde sua fundação, a paróquia tem se destacado como um espaço de acolhimento, espiritualidade e serviço, reunindo fiéis de várias comunidades urbanas, como Nossa Senhora de Fátima e Santa Clara. Com uma vida pastoral ativa, conta com diversas pastorais, grupos e movimentos – entre eles o grupo de jovens JCC – Jovens Caminhando com Cristo –, que contribuem para a evangelização e o fortalecimento da vida cristã. A paróquia é um verdadeiro ponto de encontro da fé, promovendo celebrações, formações, ações sociais e missionárias com espírito franciscano de simplicidade e fraternidade.</p>
+      <br>
+      <img class = "paroquia" src="images/igreja.jpg" alt="Foto da Paróquia São Francisco de Assis"/>
+      <br>
+      <img class = "paroquia2" src="images/igreja2.jpg" alt="Foto da Paróquia São Francisco de Assis - Interior"/>
+    </section>
+
+    <section id="coordenadores">
+      <h2>Nossos Coordenadores | 2026-2027</h2>
+      <div class="coordenadores-grid">
+        <article class="coordenador">
+          <h3>Gabriel Andrade</h3>
+          <img src="images/gabriel.jpg" alt="Foto do Coordenador Gabriel Andrade"/>
+          <p>Gabriel é um jovem dedicado e apaixonado pela fé, sempre buscando inspirar seus colegas a caminharem juntos com Cristo. Com uma liderança carismática, ele tem sido fundamental na organização dos encontros e atividades do grupo.</p>
+          <br>
+
+          <h3>Felipe Carvalho</h3>
+          <img src="images/felipe.jpg" alt="Foto do Coordenador Felipe Carvalho"/>
+          <p>Felipe é conhecido por sua energia contagiante e compromisso com a missão do JCC. Ele traz uma perspectiva jovem e inovadora para o grupo, incentivando a participação ativa dos membros em todas as iniciativas.</p>
+          <br>
+          
+          <h3>Laura Motta</h3>
+          <img src="images/laura.jpg" alt="Foto da Coordenadora Laura Motta"/>
+          <p>Laura é uma jovem dedicada e comprometida com a missão do JCC. Ela traz uma visão de liderança inspiradora, sempre buscando fortalecer a comunidade e promover momentos de espiritualidade e crescimento pessoal.</p>         
+        </article>    
+      </div>
+    </section>
+
+    <section id="encontros">
+      <h2>Alguns encontros marcantes</h2>
+      <div class="encontros-grid">
+        <article class="encontro">
+          <h3>Encontro realizado em uma chácara</h3>
+          <p>Encontro que reuniu nossos jovens para um momento de adoração e entrega à Jesus, em um ambiente natural e acolhedor.</p>
+          <br>
+          <img src = "images/encontroChácara.jpg" alt="Encontro feito em uma chácara"/>
+          <br>
+
+          <h3>Summer Beats 2024</h3>
+          <p>Nossos jovens marcaram presença no evento Summer Beats de 2024, representando nosso grupo e compartilhando a mensagem de amor e esperança de Jesus em um momento de adoração e oração com várias celebridades católicas.</p>
+          <br>
+          <img src = "images/SummerBeats.jpg" alt="JCC no Summer Beats 2024"/>
+          <br>
+
+          <h3>Grupão na Paróquia São Camilo de Lélis</h3>
+          <p>Noite especial para nossos jovens que foram ao grupão realizado na Paróquia São Camilo de Lélis, diante do Santissímo Sacramento em prol de muita oração, entrega a Deus e muita adoração com música, juntamente também com nossos irmãos do grupo de jovens da Paróquia Nossa Senhora de Guadalupe.</p>
+          <br>
+          <img src = "images/GrupaoGuadalupe.jpg" alt="JCC no grupão feito em 2024 na Paróquia São Camilo de Lélis"/>
+          <br>
+
+          <h3>Encontro no Salão Paroquial</h3>
+          <p>Encontro normal feito no Salão Paroquial, assim geralmente são realizados nossos encontros com nossos jovens, com dinâmicas, debates, adoração, reflexão e etc.</p>
+          <br>
+          <img src = "images/grupoSalaobandeira.jpg" alt="Encontro feito no Salão Paroquial"/>
+          <br>
+
+          <h3>Luau na Praça do São Judas</h3>
+          <p>Noite de luau com muitos cantos e adoração, com o objetivo de louvar o Senhor Deus por tudo que tem feito na vida de nossos jovens, sendo assim uma noite linda e agradável.</p>
+          <br>
+          <img src = "images/LuaunaPraça.jpg" alt="Luau realizado na Praça do São Judas"/>
+          <br>
+
+          <h3>Encontro sobre os Santos e Comemoração de Aniversário de nosso jovem</h3>
+          <p>Um encontro abençoado por Deus, onde falamos sobre os santos e preenchemos em grupinhos a ficha deles, refletindo a história de cada um. Após isso, uma surpresa de Aniversário pro nosso jovem João Victor, com bolo e salgados.</p>
+          <br>
+          <img src="images/NiverJoao1.jpg" alt="Aniversário do jovem João Victor">
+          <img src="images/NiverJoao2.jpg" alt="Nossas Jovens com o Aniversariante">
+          <br>
+
+          <h3>Encontro Mariano</h3>
+          <p>Realizado com o objetivo de termos um momento com nossa mãezinha do céu, pedindo sua intercessão pra nossa vida e agradecendo-a.</p>
+          <br>
+          <img src="images/momentoMariano.jpg" alt="Momento Mariano">
+          <br>
+
+          <h3>Adoração ao Santissímo</h3>
+          <p>Exposição do Santissímo na Comunidade Recanto de Belém, com pregação de nosso Ex-Coordenador Vinicius Cavalheri e uma bela cantoria de nosso coral. Momento abençoado e sagrado com Jesus Eucaristíco para os nossos jovens.</p>
+          <br>
+          <img src="images/adoração.jpg" alt="Adoração ao Santíssimo na Comunidade Recanto de Belém">
+        </article>
+      </div>
+    </section>
+
+
+    <section id="campanha-natal">
+      <h2>Campanhas de Natal JCC</h2>
+      <p>Um dos grandes marcos do nosso grupo é a campanha solidária de Natal, realizada todos os anos desde a nossa fundação. Nessa ação, percorremos em carreata as ruas do Bairro Parque Novo Mundo e arredores, distribuindo saquinhos de bala e pipoca, brinquedos e bolas de futebol para as crianças. Também fazemos a doação de cestas básicas para famílias em situação de maior vulnerabilidade, especialmente em bairros de menor poder aquisitivo, como Mathiensen e Cidade Jardim.</p>
+      <br>
+      <p>Os preparativos costumam começar em novembro e seguem até a segunda semana de dezembro. Após essa etapa, a campanha acontece ao longo de dois dias, seguindo o mesmo formato: uma picape decorada com luzes conduz o percurso, trazendo o Papai Noel e seus ajudantes na traseira, abrindo a fila de carros. Assim, o desfile tem início ao som de músicas natalinas e buzinaços contínuos, buscando atrair a atenção de todos ao redor.</p>
+      <br>
+      <div class="campanha-grid">
+        <img class="campanha-natal" src="images/campanhaNatal1.jpg" alt="Papai Noel entregando presentes">
+        <img class="campanha-natal2" src="images/campanhaNatal2.jpg" alt="Carreata de Natal do JCC">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Siga-nos no instagram e fique por dentro de cada detalhe:</p>
+    <a href="https://www.instagram.com/grupojcc.americana?igsh=OTVka2Y1ZnRnNW4z" target="_blank">Acompanhe a gente</a>
+    <br>
+    <br>
+    <p>&copy; Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>

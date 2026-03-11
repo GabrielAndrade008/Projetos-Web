@@ -1,0 +1,340 @@
+/* =========================
+   RESET GLOBAL
+   Remove margens e paddings padrão
+   e garante cálculo correto de largura/altura
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   CONTROLE DE SEÇÕES
+   Usado junto com JavaScript
+   para mostrar/esconder seções
+========================= */
+section {
+  display: none;           /* Todas as seções começam escondidas */
+}
+
+section.active {
+  display: block;          /* Apenas a seção ativa é exibida */
+}
+
+header{
+  position: sticky; /* Define o comportamento sticky */
+  top: 0;          /* Fixa no topo da tela */
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+/* =========================
+   NAVEGAÇÃO BÁSICA
+   Estilo inicial do menu
+========================= */
+nav ul {
+  display: flex;           /* Links lado a lado */
+  list-style: none;        /* Remove marcadores da lista */
+  gap: 1rem;               /* Espaço entre os links */
+}
+
+nav a {
+  text-decoration: none;   /* Remove sublinhado */
+  color: inherit;          /* Usa a cor do elemento pai */
+  font-weight: bold;       /* Destaque visual */
+}
+
+
+/* =========================
+   CORPO DO SITE
+   Tema escuro moderno
+========================= */
+body {
+  font-family: 'Segoe UI', sans-serif;  /* Fonte limpa e moderna */
+  background-color: #121212;            /* Fundo escuro */
+  color: #f0f0f0;                        /* Texto claro */
+  line-height: 1.6;                     /* Melhor leitura */
+}
+
+
+/* =========================
+   NAVBAR
+   Barra superior fixa
+========================= */
+.navbar {
+  display: flex;                /* Logo e links na mesma linha */
+  align-items: center;          /* Alinhamento vertical */
+  justify-content: space-between;
+  background-color: #1c1c1c;    /* Fundo da navbar */
+  padding: 1rem 2rem;
+  position: sticky;             /* Fixa no topo ao rolar */
+  top: 0;
+  z-index: 100;                 /* Garante que fique acima do conteúdo */
+}
+
+
+/* =========================
+   LOGO
+========================= */
+.logo img {
+  height: 90px;                 /* Tamanho fixo da logo */
+  width: auto;                  /* Mantém proporção */
+}
+
+
+/* =========================
+   LINKS DE NAVEGAÇÃO
+========================= */
+.nav-links {
+  display: flex;
+  gap: 2rem;                    /* Espaço entre os botões */
+}
+
+.nav-links a {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 
+    background-color 0.3s, 
+    color 0.3s, 
+    transform 0.2s;             /* Animação suave */
+}
+
+
+/* Efeito hover nos links */
+.nav-links a:hover {
+  background-color: #FFD700;    /* Dourado */
+  color: #121212;               /* Contraste */
+  transform: scale(1.05);       /* Leve aumento */
+}
+
+
+/* =========================
+   SEÇÕES DE CONTEÚDO
+========================= */
+section {
+  padding: 3rem 2rem;           /* Espaçamento interno */
+}
+
+
+/* =========================
+   TÍTULOS
+========================= */
+h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #FFD700;               /* Destaque dourado */
+}
+
+
+/* =========================
+   ENCONTROS (GRID)
+========================= */
+.encontros-grid {
+  display: grid;                /* Layout em grade */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-items: center;        /* Centraliza os cards */
+}
+
+
+/* Card de cada encontro */
+.encontro {
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.1);
+  transition: 
+    transform 0.3s ease, 
+    box-shadow 0.3s ease;
+  max-width: 400px;
+  width: 100%;
+}
+
+
+/* Efeito hover no card */
+.encontro:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+
+/* Imagens dos encontros */
+.encontro img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+
+/* Título do encontro */
+.encontro h3 {
+  color: #FFD700;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+
+/* Texto do encontro */
+.encontro p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+/*==========================
+    COORDENADORES
+==========================*/
+.coordenadores-grid {
+  display: grid;                /* Layout em grade */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-items: center;        /* Centraliza os cards */
+}
+
+/* Card de cada coordenador */
+.coordenador {
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.1);
+  transition: 
+    transform 0.3s ease, 
+    box-shadow 0.3s ease;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Efeito hover no card */
+.coordenador:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+/* Imagens dos coordenadores */
+.coordenador img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* Título do nome */
+.coordenador h3 {
+  color: #FFD700;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Texto do coordenador */
+.coordenador p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+
+/* =========================
+   IMAGENS GRANDES
+   (História, Paróquia e Campanha Natal)
+========================= */
+.antigo, 
+.antigo2, 
+.paroquia, 
+.paroquia2 {
+  width: 100%;
+  max-width: 900px;     /* Limite em telas grandes */
+  height: auto;
+  display: block;
+  margin: 2.5rem auto;  /* Centraliza */
+  border-radius: 12px;
+}
+
+.campanha-grid {
+  display: grid;                /* Layout em grade */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-items: center;        /* Centraliza os cards */
+}
+
+.campanha-natal {
+ background-color: #1f1f1f;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.1);
+  transition: 
+    transform 0.3s ease, 
+    box-shadow 0.3s ease;
+  max-width: 400px;
+  width: 100%;
+  justify-items: center;
+}
+
+.campanha-natal:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.campanha-natal2 {
+ background-color: #1f1f1f;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.1);
+  transition: 
+    transform 0.3s ease, 
+    box-shadow 0.3s ease;
+  max-width: 400px;
+  width: 100%;
+  justify-items: center;
+}
+
+.campanha-natal2:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+
+
+/* =========================
+   RODAPÉ
+========================= */
+footer {
+  background-color: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+
+
+/* Links do rodapé */
+footer a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+   Ajustes para celular
+========================= */
+@media only screen and (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;     /* Menu em coluna */
+    align-items: flex-start;
+  }
+}
